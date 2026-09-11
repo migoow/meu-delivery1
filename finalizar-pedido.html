@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finaliza Pedido - Sabor & Cia Delivery</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+	<center>
+		<p>🔒<strong>Formulário Seguro de Finalização do Pedido | Preencha seus dados para entrega rápida</strong></p>
+	</center>
+
+	<hr>
+
+	<header>
+		<center>
+			<h1>Sabor & Cia Delivery</h1>
+			<p><em>Finalize seu pedido em poucos passos</em></p>
+
+			<nav>
+				<a href = "index.html">Início</a> |
+				<a href = "produtos.html">Cardapio de Produtos</a> |
+				<a href = "finalizar-pedido.html"><strong>Finalizar Pedido</strong></a>
+			</nav>
+		</center>
+	</header>
+
+	<hr>
+
+	<section>
+		<h2>Dados Para Entrega e Pagamento</h2>
+		<p>Preencha os dados abaixo para confirmarmos seu pedido na cozinha:</p>
+	</section>
+
+	<form action="finalizar-pedido.html" method="GET">
+
+		<table border="0" width="100%" cellpadding="10" cellspacing="0">
+			<tr valign="top">
+				
+				<td width="60%">
+					
+					<fieldset>
+						<legend>👤 <strong>1. Seus Dados Pessoais</strong></legend>
+						<br>
+						
+						<label for="nome">Nome Completo: *</label><br>
+						<input type="text" id="nome" name="nome" placeholder="Digite seu nome e sobrenome" required size="40">
+						<br><br>
+
+						<label for="email">E-mail para Confirmação: *</label><br>
+						<input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required size="40">
+						<br><br>
+
+						<label for="whatsapp">WhatsApp / Celular com DDD: *</label><br>
+						<input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 98765-4321" required size="25">
+					</fieldset>
+
+					<br>
+
+					<fieldset>
+						<legend>📍 <strong>2. Endereço de Entrega</strong></legend>
+						<br>
+
+						<label for="rua">Rua / Avenida: *</label><br>
+						<input type="text" id="rua" name="rua" placeholder="Ex: Rua das Flores" required size="40">
+						<br><br>
+
+						<label for="numero">Número: *</label><br>
+						<input type="text" id="numero" name="numero" placeholder="Ex: 123" required size="10">
+						<br><br>
+
+						<label for="complemento">Complemento (Apto, Bloco, Casa):</label><br>
+						<input type="text" id="complemento" name="complemento" placeholder="Ex: Apto 32" size="25">
+						<br><br>
+
+						<label for="bairro">Bairro: *</label><br>
+						<select id="bairro" name="bairro" required>
+							<option value="">Selecione o bairro de entrega...</option>
+							<option value="centro">Centro</option>
+							<option value="jardins">Jardins</option>
+							<option value="vila-nova">Vila Nova</option>
+						</select>
+						<br><br>
+
+						<label for="referencia">Ponto de Referência:</label><br>
+						<input type="text" id="referencia" name="referencia" placeholder="Ex: Próximo à padaria" size="40">
+					</fieldset>
+
+				</td>
+
+				<td width="40%">
+
+					<h3>📦 Resumo do Pedido</h3>
+					<table border="1" cellpadding="8" cellspacing="0" width="100%">
+						<tbody>
+							<tr>
+								<td>1x Burger Bacon Supreme</td>
+								<td align="right">R$ 36,90</td>
+							</tr>
+							<tr>
+								<td>Adicional de Bacon Crocante</td>
+								<td align="right">+ R$ 5,00</td>
+							</tr>
+							<tr>
+								<td>Taxa de Entrega (Estimada)</td>
+								<td align="right">+ R$ 7,00</td>
+							</tr>
+							<tr>
+								<td>Desconto Cupom Primeira Compra</td>
+								<td align="right">- R$ 5,00</td>
+							</tr>
+							<tr>
+								<td><strong>TOTAL ESTIMADO:</strong></td>
+								<td align="right"><strong><font color="red">R$ 43,90</font></strong></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<br>
+
+					<fieldset>
+						<legend><strong>Status do Pedido</strong></legend>
+						<p>Etapa do Pedido:</p>
+						<progress value="25" max="100"></progress>
+						<p><small>Passo 1 de 4: Preenchimento dos dados</small></p>
+						<p>⏱️ <strong>Tempo estimado de entrega:</strong> 35 a 45 minutos.</p>
+					</fieldset>
+
+				</td>
+
+			</tr>
+		</table>
+
+		<br><hr><br>
+
+		<fieldset>
+			<legend>🍔 <strong>3. Personalização do Pedido</strong></legend>
+			<br>
+
+			<label><strong>Ponto da Carne:</strong></label><br>
+			<input type="radio" id="ponto1" name="ponto_carne" value="bem_passado">
+			<label for="ponto1">Bem passado</label><br>
+
+			<input type="radio" id="ponto2" name="ponto_carne" value="ao_ponto" checked>
+			<label for="ponto2">Ao ponto (Recomendado)</label><br>
+
+			<input type="radio" id="ponto3" name="ponto_carne" value="mal_passado">
+			<label for="ponto3">Mal passado</label>
+			<br><br>
+
+			<label><strong>Adicionais / Ingredientes Extra:</strong></label><br>
+			<input type="checkbox" id="add1" name="adicionais[]" value="bacon">
+			<label for="add1">Extra Bacon (+ R$ 5,00)</label><br>
+
+			<input type="checkbox" id="add2" name="adicionais[]" value="queijo">
+			<label for="add2">Queijo Cheddar Duplo (+ R$ 4,00)</label><br>
+
+			<input type="checkbox" id="add3" name="adicionais[]" value="molho">
+			<label for="add3">Molho Especial da Casa (+ R$ 3,00)</label>
+			<br><br>
+
+			<label for="observacoes"><strong>Observações para a Cozinha:</strong></label><br>
+			<textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Ex: Retirar cebola, mandar maionese extra, etc."></textarea>
+		</fieldset>
+
+		<br><br>
+
+		<fieldset>
+			<legend>💳 <strong>4. Forma de Pagamento</strong></legend>
+			<br>
+
+			<label for="pagamento">Selecione a forma de pagamento: *</label><br>
+			<select id="pagamento" name="forma_pagamento" required>
+				<option value="">Selecione...</option>
+				<option value="pix">PIX (Aprovação Instantânea)</option>
+				<option value="cartao_credito">Cartão de Crédito (Na Entrega)</option>
+				<option value="cartao_debito">Cartão de Débito (Na Entrega)</option>
+				<option value="dinheiro">Dinheiro</option>
+			</select>
+			<br><br>
+
+			<label for="troco">Se for pagar em dinheiro, precisa de troco para quanto?</label><br>
+			<input type="text" id="troco" name="troco" placeholder="Ex: Troco para R$ 50,00" size="30">
+		</fieldset>
+
+		<br><br>
+
+		<center>
+			<input type="checkbox" id="termos" name="termos" required>
+			<label for="termos">Li e concordo com os termos de entrega e privacidade.</label>
+			<br><br>
+
+			<button type="submit">🚀 FINALIZAR E ENVIAR PEDIDO</button>
+		</center>
+
+	</form>
+
+	<br><hr><br>
+
+	<footer>
+		<center>
+			<h3>🍔 Sabor & Cia Delivery</h3>
+			<p>Dúvidas sobre o pedido? Ligue para (11) 99999-9999 | Atendimento até 23:30</p>
+
+			<p>
+				<a href="index.html">Início</a> | 
+				<a href="produtos.html">Produtos</a> | 
+				<a href="finalizar-pedido.html">Finalizar Pedido</a>
+			</p>
+
+			<p>Sabor & Cia Delivery &copy; 2026 - Projeto didático para aula de HTML (4 Horas).</p>
+		</center>
+	</footer>
+
+</body>
+</html>

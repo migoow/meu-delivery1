@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cardapio Com</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+	<center>
+		<p><strong>Entregamos em toda cidade em até 45 minutos! Escolha seus itens abaixo.</strong></p>
+		
+    </center>
+
+    <hr>
+
+    <header>
+        <center>
+            <h3>🍔 Sabor & Cia Delivery</h3>
+            <p>Cardapio Completo de Produtos</p>
+
+            <nav>
+
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html"><strong>Cardapio de Produtos</strong></a> | 
+                <a href="finalizar-pedido.html">Finalizar Pedido</a>
+            </nav>
+           
+        </center>
+    </header>
+
+    <hr>
+
+    <center>
+        <p>
+            <strong>Ir direto para:</strong> 
+            🍔 <a href="#lanches">Hambúrgueres</a> | 
+            🍕 <a href="#pizzas">Pizzas</a> | 
+            🍟 <a href="#porcoes">Porções</a> | 
+            🥤 <a href="#bebidas">Bebidas & Sobremesas</a>
+        </p>
+
+        <p>
+            🔍 <strong>Buscar no Cardápio:</strong>
+            <input type="search" list="opcoes-busca" placeholder="Ex: Bacon, Calabresa, Batata...">
+            
+            <datalist id="opcoes-busca">
+                <option value="Burger Clássico">
+                <option value="Burger Bacon Supreme">
+                <option value="Pizza Calabresa">
+                <option value="Batata Frita">
+                <option value="Refrigerante">
+            </datalist>
+
+            <button type="button">Buscar</button>
+        </p>
+    </center>
+
+    <hr>
+
+
+    <section id = "lanches">
+    	<h2>🍔 Hambúrgueres Artesanais</h2>
+    	<p>Carne 100% bovina grelhada na brasa, servida no pão brioche selado na manteiga.</p>
+
+    	<table border= "1" cellpadding="10" width="100%">
+    		<thead>
+    			<tr>
+    				<th>Foto</th>
+    				<th>Nome & Ingredientes</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            	  tr align="center">
+                    <td>
+                        <img src="assets/img/burger-classico.jpg" alt="Burger Clássico" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Burger Clássico</strong><br><br>
+                        Hambúrguer bovino 160g, queijo prato derretido, alface fresca, tomate maduro e maionese verde da casa no pão brioche.
+                    </td>
+                    <td>
+                        <strong>R$ 29,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 2 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/burger-bacon.jpg" alt="Burger Bacon Supreme" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Burger Bacon Supreme</strong><br><br>
+                        Blend 180g na brasa, fatias generosas de bacon artesanal crocante, queijo cheddar inglês e molho barbecue defumado.<br><br>
+                        <mark>MAIS VENDIDO</mark>
+                    </td>
+                    <td>
+                        <strong>R$ 36,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 3 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/smash-burger.jpg" alt="Smash Burger Duplo Cheddar" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Smash Burger Duplo Cheddar</strong><br><br>
+                        2 carnes smash de 90g prensadas com crostinha dourada, queijo cheddar derretido, picles e molho especial.<br><br>
+                        <mark>CROCANTE</mark>
+                    </td>
+                    <td>
+                        <strong>R$ 28,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 4 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/burger-vegano.jpg" alt="Burger Vegano Futuro" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Burger Vegano Futuro</strong><br><br>
+                        Hambúrguer 100% vegetal à base de grão-de-bico e cogumelos frescos, queijo vegano, rúcula e maionese de ervas sem ovos.<br><br>
+                        <mark>VEGANO</mark>
+                    </td>
+                    <td>
+                        <strong>R$ 32,00</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p align="right">
+            <a href="#">▲ Voltar ao topo</a>
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="pizzas">
+        <h2>🍕 Pizzas Especiais (8 Fatias / 35cm)</h2>
+        <p>Massa italiana de fermentação natural de 48 horas, assada em alta temperatura.</p>
+
+        <table border="1" cellpadding="10" width="100%">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome & Ingredientes</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/pizza-calabresa.jpg" alt="Pizza Calabresa Especial" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Pizza Calabresa Especial</strong><br><br>
+                        Molho pelati caseiro, mussarela, linguiça calabresa fatiada artesanal, cebola roxa e azeitonas pretas.<br><br>
+                        <mark>TRADICIONAL</mark>
+                    </td>
+                    <td>
+                        <strong>R$ 45,00</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/pizza-quatro-queijos.jpg" alt="Pizza Quatro Queijos Nobres" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Pizza Quatro Queijos Nobres</strong><br><br>
+                        Generosas camadas de queijo mussarela, provolone curado, catupiry cremoso e queijo gorgonzola especial.
+                    </td>
+                    <td>
+                        <strong>R$ 49,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/pizza-margherita.jpg" alt="Pizza Margherita Clássica" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Pizza Margherita Clássica</strong><br><br>
+                        Molho de tomate fresco, mussarela de búfala derretida, rodelas de tomate e folhas de manjericão fresco da horta.
+                    </td>
+                    <td>
+                        <strong>R$ 42,00</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/pizza-chocolate.jpg" alt="Pizza Doce Choco-Morango" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Pizza Doce Choco-Morango</strong><br><br>
+                        Massa fina crocante com ganache de chocolate ao leite, fatias de morangos frescos e raspas de chocolate branco.<br><br>
+                        <mark>SOBREMESA</mark>
+                    </td>
+                    <td>
+                        <strong>R$ 38,00</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p align="right">
+            <a href="#">▲ Voltar ao topo</a>
+        </p>
+    </section>
+
+    <hr>
+
+
+    <section id="porcoes">
+        <h2>🍟 Porções & Acompanhamentos</h2>
+        <p>O acompanhamento perfeito para o seu pedido.</p>
+
+        <table border="1" cellpadding="10" width="100%">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome & Descrição</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/batata-frita.jpg" alt="Batata Frita Cheddar & Bacon" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Batata Frita Cheddar & Bacon (400g)</strong><br><br>
+                        Batatas crocantes e sequinhas cobertas com queijo cheddar cremoso e pedacinhos de bacon frito.
+                    </td>
+                    <td>
+                        <strong>R$ 24,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 2 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/aneis-cebola.jpg" alt="Onion Rings / Anéis de Cebola" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Onion Rings / Anéis de Cebola (12 un)</strong><br><br>
+                        Anéis de cebola selecionados, empanamento panko crocante e fritos na hora. Acompanha molho tártaro.
+                    </td>
+                    <td>
+                        <strong>R$ 22,00</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 3 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/nuggets.jpg" alt="Nuggets Artesanais de Frango" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Nuggets Artesanais de Frango (10 un)</strong><br><br>
+                        Pedaços de peito de frango temperados, empanamento crocante. Acompanha potinho de molho barbecue.
+                    </td>
+                    <td>
+                        <strong>R$ 19,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p align="right">
+            <a href="#">▲ Voltar ao topo</a>
+        </p>
+    </section>
+
+    <hr>
+
+
+    <section id="bebidas">
+        <h2>🥤 Bebidas & Sobremesas</h2>
+        <p>Bebidas geladas e sobremesas deliciosas para fechar sua refeição.</p>
+
+        <table border="1" cellpadding="10" width="100%">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome & Opções</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Item 1 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/refrigerante.jpg" alt="Refrigerante Lata" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Refrigerante Lata (350ml)</strong><br><br>
+                        Opções: Coca-Cola original, Coca Zero, Guaraná Antarctica ou Fanta Laranja.
+                    </td>
+                    <td>
+                        <strong>R$ 6,00</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 2 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/milkshake.jpg" alt="Milk-shake Cremoso Especial" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Milk-shake Cremoso Especial (400ml)</strong><br><br>
+                        Feito com sorvete artesanal de chocolate batido e finalizado com chantilly.
+                    </td>
+                    <td>
+                        <strong>R$ 16,50</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Item 3 -->
+                <tr align="center">
+                    <td>
+                        <img src="assets/img/petit-gateau.jpg" alt="Petit Gâteau com Sorvete de Baunilha" width="150">
+                    </td>
+                    <td align="left">
+                        <strong>Petit Gâteau com Sorvete de Baunilha</strong><br><br>
+                        Bolo quente de chocolate meio amargo com calda escorrendo e bola de sorvete de baunilha.
+                    </td>
+                    <td>
+                        <strong>R$ 18,90</strong>
+                    </td>
+                    <td>
+                        <a href="finalizar-pedido.html">
+                            <button type="button">Pedir este Item</button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p align="right">
+            <a href="#">▲ Voltar ao topo</a>
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Rodapé -->
+    <footer>
+        <center>
+            <h3>🍔 Sabor & Cia Delivery</h3>
+            <p>
+                <a href="index.html">Início</a> | 
+                <a href="produtos.html">Produtos</a> | 
+                <a href="finalizar-pedido.html">Finalizar Pedido</a>
+            </p>
+            <p>Sabor & Cia Delivery &copy; 2026 - Projeto didático para aula de HTML (4 Horas).</p>
+        </center>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+    </thead>
+
+</body>
+</html>
