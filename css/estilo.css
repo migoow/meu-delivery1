@@ -1,0 +1,170 @@
+/* ==========================================================================
+   SABOR & CIA DELIVERY - CSS MINIMALISTA PARA AULAS DE HTML
+   
+   IMPORTANTE:
+   Este arquivo CSS NÃO modifica o posicionamento dos elementos na página.
+   NÃO utiliza flexbox, grid, float ou posicionamento absoluto/fixo.
+   Todo o layout e posicionamento permanecem 100% controlados pelo HTML puro!
+   
+   Finalidade deste CSS:
+   - Melhorar a legibilidade com fonte limpa e espaçamento entre linhas;
+   - Definir cores agradáveis para textos, links e destaques;
+   - Suavizar bordas de tabelas, botões e campos de formulário.
+   ========================================================================== */
+
+/* 1. TIPOGRAFIA GERAL E FUNDO DA PÁGINA */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* 2. TÍTULOS E CABEÇALHOS */
+h1 {
+    color: #d62828;
+}
+
+h2 {
+    color: #1d3557;
+}
+
+h3, h4 {
+    color: #2b2d42;
+}
+
+/* 3. LINKS */
+a {
+    color: #d62828;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ba181b;
+}
+
+/* 4. LINHAS HORIZONTAIS */
+hr {
+    border: 0;
+    border-top: 1px solid #dddddd;
+    margin: 20px 0;
+}
+
+/* 5. IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* 6. TABELAS (Bordas limpas e cores de cabeçalho) */
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #cccccc;
+}
+
+table[border="0"],
+table[border="0"] > tbody > tr > td,
+table[border="0"] > tr > td {
+    border: none;
+    background-color: transparent;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #1d3557;
+}
+
+td {
+    color: #444444;
+}
+
+/* 7. FORMULÁRIOS, CAMPOS E BOTÕES */
+fieldset {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+legend {
+    color: #1d3557;
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+select,
+textarea {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 6px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d62828;
+    outline: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #d62828;
+    color: #ffffff;
+    border: 1px solid #ba181b;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ba181b;
+}
+
+button[type="reset"] {
+    background-color: #6c757d;
+    border-color: #5a6268;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+/* 8. DESTAQUES E DETALHES */
+mark {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+details {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+summary {
+    cursor: pointer;
+    color: #1d3557;
+}
+
+progress {
+    height: 18px;
+}
